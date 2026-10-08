@@ -87,11 +87,6 @@ def handle_and_print_score(set_of_questions, game_config, printScore=True):
     st.session_state.question_state = None
     st.session_state.questions = []
 
-    if st.button("Return to Home"):
-        st.session_state.ret == True
-        st.session_state.current_page = "home"
-        st.rerun()
-
 
 #---- DISPLAY STATS STUFF ----
 
@@ -106,24 +101,24 @@ def compute_categ_avgs():
             percentage_sum += quiz["percentage"]
 
         if len(quizzes) != 0:
-            percentage_avg = percentage_sum / len(categ)
+            percentage_avg = percentage_sum / len(quizzes)
         else:
             percentage_avg = 0
         categs_avgs.append((categ, round(percentage_avg, 2)))
     return categs_avgs
 
-def ret_high_and_low_categs():
+def ret_all_categs():
     categs_avgs = compute_categ_avgs()
     sorted_categs_avgs = sorted(categs_avgs, key = lambda item:item[1], reverse=True)
     return sorted_categs_avgs
 
 
 def display_categorical_stats():
-    sorted_categs_avgs = ret_high_and_low_categs()
+    sorted_categs_avgs = ret_all_categs()
     for item in sorted_categs_avgs:
         st.write(f"{item[0]} \t {item[1]}")
 
-def display_score_based_performance():
+def display_overall_performance():
     stats = load_stats()
     count = no_of_questions = total_correct = total_wrong = sum_percentage = 0
 
@@ -149,7 +144,7 @@ def display_stats():
     user_input = st.selectbox("What would you like to look at today?", options=stat_view_options)
 
     if user_input == "Overall performance":
-        display_score_based_performance()
+        display_overall_performance()
     elif user_input == "Categorical performance":
         display_categorical_stats()
 
@@ -162,7 +157,7 @@ to do practice later on
 
 if __name__ == "__main__":
     #categs_avgs = [("Math", 90),  ("Computer", 299),  ("Computer", 380), ("Computer", 80),  ("Computer", 20)]
-    #print(ret_high_and_low_categs(categs_avgs))
+    #print(ret_all_categs(categs_avgs))
     sorted_categs_avgs = [('Computer', 380), ('Computer', 299), ('Math', 90), ('Computer', 80), ('Computer', 20)]
     st.write(display_categorical_stats(sorted_categs_avgs))
     st.write("Doneee")

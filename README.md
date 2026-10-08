@@ -1,8 +1,7 @@
 # QUIZME 
 
-(until I find a better name)
-
-Basically quizzes in the form of different game modes :) Fun and educative :)
+Quizzes in the different game modes :) Fun and educative! :)
+There are two versions: Terminal and Web UI
 
 ngl I learned a lot from running this code countless times :) e.g. that this train station is in Wales :)
 ![crazy_question](devlog/images/crazy_question.png)
@@ -22,7 +21,7 @@ So, yes, fun and educative. Play QuizMe todayyy!!! :)) Also, more motivation: Be
 You can run my app three ways:
 - Terminal
 - Streamlit UI in your browser.
-- Streamlit website on app https://quiz-master-q2evebp8vev9djubrrgzjy.streamlit.app/
+- Streamlit website on app https://quizme-f98r.onrender.com/
   (Do this - )
 
 

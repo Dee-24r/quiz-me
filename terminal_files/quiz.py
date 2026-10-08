@@ -134,7 +134,8 @@ def run_timed_mode(game_config):
     handle_and_print_score(set_of_questions, game_config)
 
 
-
+#Jeopardy mode, you gamble with the scores, not with the questions themselves. So, u consciously pick
+#the number of points awarded for a question you haven't yet seen.
 
 def run_jeopardy_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
@@ -143,26 +144,51 @@ def run_jeopardy_mode(game_config):
     set_of_questions["no_of_questions"] = len(list_of_questions)
     set_of_questions["wrongly_answered"] = []
     set_of_questions["correctly_answered"] = []
-    
-    for question in list_of_questions:
-        #should implement the dict here if something is easy
-        #meaning we shud get questions of different difficulties. (will come back to this tbh)
-        
-        if question["difficulty"] == "easy":
-            score_addition = 10
-        if question["difficulty"] == "medium":
-            score_addition = 20
-        if question["difficulty"] == "hard":
-            score_addition = 30
-        display_question(question)
 
+    print("\nWelcome to Jeopardy. You answer 15 questions in total. "\
+    "You pick the amount of points that get added or removed from your score for a question that's chosen at random. " \
+    "Get it right, and it's those number of points are added. Get it wrong, and they are subtracted. More or less, blindly " \
+    "gambling on questions. You get 3 of each point questions (100, 200,.. etc).\n")
+
+    points = {
+        100: 0, 200: 0, 300: 0, 400: 0, 500: 0,
+    }
+    point_choices = list(points.keys())
+
+    for question in list_of_questions:
+        while True:
+            score_addition = input(f"Pick a your question's worth from {point_choices}: ")
+            if not score_addition.isdigit() or (score_addition not in list(points.keys())):
+                print("Enter a valid option")
+                continue
+            else:
+                score_addition = int(score_addition)
+
+            if score_addition not in point_choices or points[score_addition] >= 3:
+                print("You've exceeded the number of uses for that question worth. " \
+                "Select a different worth for your question")
+                continue
+            
+            break
+        
+        points[score_addition] += 1
+
+        if points[score_addition] >= 3:
+            point_choices.remove(score_addition)
+
+        display_question(question)
         result = select_option(question)
+
         if not result:
             score - score_addition
             (set_of_questions["wrongly_answered"]).append(question)
         elif result:
             score + score_addition
             (set_of_questions["correctly_answered"]).append(question)
+
+        print(f"score: {score}")
+        print(f" Points | Usage")
+
 
     handle_and_print_score(set_of_questions, game_config)
     print(f"Score: {score}")
@@ -204,10 +230,6 @@ def run_endless_mode(game_config):
 
 
 
-def run_exam_mode(game_config):
-    print("Not yet implemented")
-    
-
 def run_survival_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
 
@@ -227,7 +249,9 @@ def run_survival_mode(game_config):
             lives-=1
             if lives <= 0:
                 print("Game Over!")
+                handle_and_print_score(set_of_questions, game_config)
                 return
+            
         else:
             set_of_questions["correctly_answered"].append(question)
             score + 100
@@ -235,6 +259,9 @@ def run_survival_mode(game_config):
     handle_and_print_score(set_of_questions, game_config)
 
 
+def run_exam_mode(game_config):
+    print("Not yet implemented")
+    
 def run_streak_mode(game_config):
     list_of_questions = get_opentdb_questions(game_config)
 

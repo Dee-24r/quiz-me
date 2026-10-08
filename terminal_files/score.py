@@ -97,7 +97,7 @@ def compute_categ_avgs():
             percentage_sum += quiz["percentage"]
 
         if len(quizzes) != 0:
-            percentage_avg = percentage_sum / len(categ)
+            percentage_avg = percentage_sum / len(quizzes)
         else:
             percentage_avg = 0
         categs_avgs.append((categ, round(percentage_avg, 2)))

@@ -81,6 +81,12 @@ def select_option(question, allow_quit=False):
                 st.session_state.question_state = "answering"
                 st.session_state.answer = None
                 handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
+                time.sleep(1)
+
+                if st.button("Return to Home"):
+                    #st.session_state.ret == True
+                    st.session_state.current_page = "home"
+                    st.rerun()
                 return
 
 
@@ -197,15 +203,6 @@ def run_jeopardy_mode(game_config):
                 st.session_state.questions.append(question)
             time.sleep(1)
 
-
-        #st.session_state.questions = get_opentdb_questions(game_config)
-        # st.session_state.level_questions = {}
-        # st.session_state.questions = []
-
-        #     st.session_state.level_questions[f"{diffic_level}"] = get_opentdb_questions(st.session_state.state_game_config)
-        #     for question in st.session_state.level_questions[f"{diffic_level}"]:
-        #         st.session_state.questions.append(question)
-
         st.session_state.current_question = 0
         st.session_state.score = 0
         st.session_state.answer = None
@@ -217,6 +214,11 @@ def run_jeopardy_mode(game_config):
             "correctly_answered": []
         }
         st.rerun()
+
+    st.write("Welcome to Jeopardy. You answer 15 questions in total. "\
+        "You pick the amount of points that get added or removed from your score for a question that's chosing at random. " \
+        "Get it right, and it's those number of points are added. Get it wrong, and they are subtracted. More or less, blindly " \
+        "gambling on questions. You get 3 of each point questions (100, 200,.. etc).")
 
     if st.session_state.current_question < len(st.session_state.questions):
         jeopardy_board()
@@ -231,8 +233,8 @@ def run_endless_mode(game_config):
     """runs the endless option of the app. keep solving quizzzes
     till the user says exit"""
 
-    print("Hmm!! I see you're locked in?")
-    print("Get ready! I won't stop until you say so!")
+    st.write("Hmm!! I see you're locked in?")
+    st.write("Get ready! I won't stop until you say so!")
 
     if "questions" not in st.session_state or len(st.session_state.questions) == 0:
         st.session_state.questions = get_opentdb_questions(game_config)

@@ -57565,5 +57565,1220 @@
         ],
         "correctly_answered": [],
         "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 4,
+            "name": "Endless Mode",
+            "name_id": "endless_mode",
+            "description": "Solve questions until you're tired. Exit by entering 'X'."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": " Which chemical element, number 11 in the Periodic table, has the symbol Na?",
+                "options": [
+                    "Nitrogen",
+                    "Lead",
+                    "Sodium",
+                    "Carbon"
+                ],
+                "answer": "Sodium",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the perimeter of a circle more commonly known as?",
+                "options": [
+                    "Diameter",
+                    "Circumference",
+                    "Arc",
+                    "Radius"
+                ],
+                "answer": "Circumference",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How tall is the Burj Khalifa?",
+                "options": [
+                    "3,024 ft",
+                    "2,717 ft",
+                    "2,546 ft",
+                    "2,722 ft"
+                ],
+                "answer": "2,722 ft",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Port",
+                    "Bow",
+                    "Starboard",
+                    "Stern"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Spanish word for \"donkey\"?",
+                "options": [
+                    "Toro",
+                    "Caballo",
+                    "Burro",
+                    "Perro"
+                ],
+                "answer": "Burro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which restaurant's mascot is a clown?",
+                "options": [
+                    "Sonic",
+                    "Burger King",
+                    "McDonald's",
+                    "Whataburger"
+                ],
+                "answer": "McDonald's",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of the following is not the host of a program on NPR?",
+                "options": [
+                    "Peter Sagal",
+                    "Terry Gross",
+                    "Ben Shapiro",
+                    "Ira Glass"
+                ],
+                "answer": "Ben Shapiro",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What company developed the vocaloid Hatsune Miku?",
+                "options": [
+                    "Sony",
+                    "Yamaha Corporation",
+                    "Sega",
+                    "Crypton Future Media"
+                ],
+                "answer": "Crypton Future Media",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Death Star",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The word \"dozen\" usually refers to a group of how many objects?",
+                "options": [
+                    "6",
+                    "20",
+                    "10",
+                    "12"
+                ],
+                "answer": "12",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which year did Ghana gain independence?",
+                "options": [
+                    "1960",
+                    "1947",
+                    "1958",
+                    "1957"
+                ],
+                "answer": "1957",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What step in cellular respiration forms ATP?",
+                "options": [
+                    "Glycolysis",
+                    "Oxidative Phosphorylation",
+                    "Pyruvate Oxidation",
+                    "Calvin Cycle"
+                ],
+                "answer": "Oxidative Phosphorylation",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which type of cutlery is most suited for eating soup?",
+                "options": [
+                    "Knife",
+                    "Fork",
+                    "Chopsticks",
+                    "Spoon"
+                ],
+                "answer": "Spoon",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What do sailors call the left side of a boat?",
+                "options": [
+                    "Starboard",
+                    "Stern",
+                    "Bow",
+                    "Port"
+                ],
+                "answer": "Port",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What are Panama hats made out of?",
+                "options": [
+                    "Flax",
+                    "Silk",
+                    "Hemp",
+                    "Straw"
+                ],
+                "answer": "Straw",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of NASA\u2019s most famous space telescope?",
+                "options": [
+                    "Death Star",
+                    "Millenium Falcon",
+                    "Hubble Space Telescope",
+                    "Big Eye"
+                ],
+                "answer": "Hubble Space Telescope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which one of the following rhythm games was made by Harmonix?",
+                "options": [
+                    "Meat Beat Mania",
+                    "Rock Band",
+                    "Dance Dance Revolution",
+                    "Guitar Hero Live"
+                ],
+                "answer": "Rock Band",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
+                "options": [
+                    "Fat Man",
+                    "Spruce Goose",
+                    "Trojan Horse",
+                    "Noah's Ark"
+                ],
+                "answer": "Spruce Goose",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of the antagonist group in Danganronpa Another Episode: Ultra Despair Girls?",
+                "options": [
+                    "Warriors of Despair",
+                    "Warriors of Hope",
+                    "The Ultimate Despair",
+                    "The Monokubs"
+                ],
+                "answer": "Warriors of Hope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
+                "options": [
+                    "Fat Man",
+                    "Trojan Horse",
+                    "Spruce Goose",
+                    "Noah's Ark"
+                ],
+                "answer": "Spruce Goose",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Gouda cheese is from which European country?",
+                "options": [
+                    "France",
+                    "The Netherlands",
+                    "Germany",
+                    "Belgium"
+                ],
+                "answer": "The Netherlands",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the closest planet to our solar system's sun?",
+                "options": [
+                    "Earth",
+                    "Mercury",
+                    "Jupiter",
+                    "Mars"
+                ],
+                "answer": "Mercury",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When was the website reddit founded ?",
+                "options": [
+                    "2005",
+                    "2008",
+                    "2006",
+                    "2004"
+                ],
+                "answer": "2005",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What fruit is a traditional ingredient of a Black Forest Gateau?",
+                "options": [
+                    "Cherries",
+                    "Apricots",
+                    "Apples",
+                    "Raisins"
+                ],
+                "answer": "Cherries",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Zodiac symbol for Gemini?",
+                "options": [
+                    "Twins",
+                    "Scales",
+                    "Maiden",
+                    "Fish"
+                ],
+                "answer": "Twins",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Antibiotics are generally taken to combat what?",
+                "options": [
+                    "Bacterial infections",
+                    "Viruses",
+                    "Muscular pains",
+                    "Migraines"
+                ],
+                "answer": "Bacterial infections",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When was the Playstation 3 released?",
+                "options": [
+                    "November 11, 2006",
+                    "July 16, 2006",
+                    "January 8, 2007",
+                    "December 25, 2007"
+                ],
+                "answer": "November 11, 2006",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What was the first ever London Underground line to be built?",
+                "options": [
+                    "Metropolitan Line",
+                    "Victoria Line",
+                    "Circle Line",
+                    "Bakerloo Line"
+                ],
+                "answer": "Metropolitan Line",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Cube",
+                    "Sphere",
+                    "Cylinder",
+                    "Pyramid"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What nuts are used in the production of marzipan?",
+                "options": [
+                    "Almonds",
+                    "Peanuts",
+                    "Walnuts",
+                    "Pistachios"
+                ],
+                "answer": "Almonds",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of the following card games revolves around numbers and basic math?",
+                "options": [
+                    "Uno",
+                    "Munchkin",
+                    "Twister",
+                    "Go Fish"
+                ],
+                "answer": "Uno",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What alcoholic drink is made from molasses?",
+                "options": [
+                    "Rum",
+                    "Whisky",
+                    "Gin",
+                    "Vodka"
+                ],
+                "answer": "Rum",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In blood typing, the (+) and (-) marker after an A, B, AB, or O is called Rh factor. Which of the following is the source of its discovery?",
+                "options": [
+                    "Rhesus Monkeys",
+                    "Red-Haired People",
+                    "Rhizomes",
+                    "Rheumatism Patients"
+                ],
+                "answer": "Rhesus Monkeys",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "In which cardinal direction does the Sun rise from?",
+                "options": [
+                    "North",
+                    "South",
+                    "East",
+                    "West"
+                ],
+                "answer": "East",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many colors are there in a rainbow?",
+                "options": [
+                    "9",
+                    "8",
+                    "7",
+                    "10"
+                ],
+                "answer": "7",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the name of the alcoholic beverage made from potatoes or grains that originates from Poland and Russia?",
+                "options": [
+                    "Vodka",
+                    "Sake",
+                    "Absinthe",
+                    "Rum"
+                ],
+                "answer": "Vodka",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Cylinder",
+                    "Pyramid",
+                    "Sphere",
+                    "Cube"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the full meaning of RAM?",
+                "options": [
+                    "Rand Assist Mandate",
+                    "Ram",
+                    "Random Access Memory",
+                    "Random Assist Memory"
+                ],
+                "answer": "Random Access Memory",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What technology is named after a tenth-century ruler of Denmark and Norway?",
+                "options": [
+                    "Internet",
+                    "Wi-Fi",
+                    "Bluetooth",
+                    "GPS"
+                ],
+                "answer": "Bluetooth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which of the following presidents is not on Mount Rushmore?",
+                "options": [
+                    "Abraham Lincoln",
+                    "John F. Kennedy",
+                    "Theodore Roosevelt",
+                    "Thomas Jefferson"
+                ],
+                "answer": "John F. Kennedy",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Antibiotics are generally taken to combat what?",
+                "options": [
+                    "Muscular pains",
+                    "Migraines",
+                    "Viruses",
+                    "Bacterial infections"
+                ],
+                "answer": "Bacterial infections",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How many colors are there in a rainbow?",
+                "options": [
+                    "7",
+                    "9",
+                    "10",
+                    "8"
+                ],
+                "answer": "7",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who is depicted on the US hundred dollar bill?",
+                "options": [
+                    "George Washington",
+                    "Thomas Jefferson",
+                    "Benjamin Franklin",
+                    "Abraham Lincoln"
+                ],
+                "answer": "Benjamin Franklin",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many furlongs are there in a mile?",
+                "options": [
+                    "Four",
+                    "Six",
+                    "Eight",
+                    "Two"
+                ],
+                "answer": "Eight",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many letters are there in the English alphabet?",
+                "options": [
+                    "23",
+                    "28",
+                    "24",
+                    "26"
+                ],
+                "answer": "26",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which of the following nations was NOT a belligerent in World War I?",
+                "options": [
+                    "Denmark",
+                    "Greece",
+                    "Portugal",
+                    "Romania"
+                ],
+                "answer": "Denmark",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which American-owned brewery led the country in sales by volume in 2015?",
+                "options": [
+                    "Miller Coors",
+                    "Anheuser Busch",
+                    "Boston Beer Company",
+                    "D. G. Yuengling and Son, Inc"
+                ],
+                "answer": "D. G. Yuengling and Son, Inc",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Antibiotics are generally taken to combat what?",
+                "options": [
+                    "Muscular pains",
+                    "Bacterial infections",
+                    "Migraines",
+                    "Viruses"
+                ],
+                "answer": "Bacterial infections",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 6,
+        "mode": {
+            "id": 5,
+            "name": "Survival",
+            "name_id": "survival_mode",
+            "description": "Have a set of questions and only 3 chances to fail questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "The buried remains of which English explorer of Australia were found in London  in January 2019? ",
+                "options": [
+                    "Abel Tasman",
+                    "Dirk Hartog",
+                    "Matthew Flinders",
+                    "William Bourke"
+                ],
+                "answer": "Matthew Flinders",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What organ of the body produces bile?",
+                "options": [
+                    "Liver",
+                    "Stomach",
+                    "Pancreas",
+                    "Gallbladder"
+                ],
+                "answer": "Liver",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The file hosting service, \"Google Drive\" was launched on what day?",
+                "options": [
+                    "November 14, 2008",
+                    "April 24, 2012",
+                    "January 12, 2014",
+                    "January 20, 2010"
+                ],
+                "answer": "April 24, 2012",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How many cards are there in a standard deck of playing cards?",
+                "options": [
+                    "52",
+                    "32",
+                    "40",
+                    "64"
+                ],
+                "answer": "52",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 6
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 5,
+            "name": "Survival",
+            "name_id": "survival_mode",
+            "description": "Have a set of questions and only 3 chances to fail questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+                "options": [
+                    "Cabbage Patch Kids",
+                    "Transformers",
+                    "Care Bears",
+                    "Rubik\u2019s Cube"
+                ],
+                "answer": "Cabbage Patch Kids",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is H2O?",
+                "options": [
+                    "Oxygen",
+                    "None",
+                    "Hydrogen",
+                    "Water"
+                ],
+                "answer": "Water",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 2
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 7,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What does a funambulist walk on?",
+                "options": [
+                    "Broken Glass",
+                    "Balls",
+                    "The Moon",
+                    "A Tight Rope"
+                ],
+                "answer": "A Tight Rope",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Cuba's official, most widely spoken language?",
+                "options": [
+                    "Italian",
+                    "Portuguese",
+                    "French",
+                    "Spanish"
+                ],
+                "answer": "Spanish",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the most frequently used letter in the english alphabet?",
+                "options": [
+                    "I",
+                    "O",
+                    "E",
+                    "A"
+                ],
+                "answer": "E",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is Tasmania?",
+                "options": [
+                    "The Name of a Warner Brothers Cartoon Character",
+                    "An Australian State",
+                    "A flavor of Ben and Jerry's ice-cream",
+                    "A Psychological Disorder"
+                ],
+                "answer": "An Australian State",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which of these is NOT considered to be a colour that makes up the rainbow?",
+                "options": [
+                    "Blue",
+                    "Violet",
+                    "Orange",
+                    "Pink"
+                ],
+                "answer": "Pink",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "How many furlongs are there in a mile?",
+                "options": [
+                    "Eight",
+                    "Two",
+                    "Four",
+                    "Six"
+                ],
+                "answer": "Eight",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the name of Poland in Polish?",
+                "options": [
+                    "Polska",
+                    "Polszka",
+                    "Pupcia",
+                    "P\u00f3land"
+                ],
+                "answer": "Polska",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 7
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Port",
+                    "Stern",
+                    "Starboard",
+                    "Bow"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many syllables make up a haiku?",
+                "options": [
+                    "15",
+                    "17",
+                    "10",
+                    "21"
+                ],
+                "answer": "17",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When was Pong released?",
+                "options": [
+                    "December 14, 1974",
+                    "March 29, 2017",
+                    "November 29, 1972",
+                    "November 29, 1970"
+                ],
+                "answer": "November 29, 1972",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 4,
+            "name": "Endless Mode",
+            "name_id": "endless_mode",
+            "description": "Solve questions until you're tired. Exit by entering 'X'."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What are Panama hats made out of?",
+                "options": [
+                    "Flax",
+                    "Hemp",
+                    "Silk",
+                    "Straw"
+                ],
+                "answer": "Straw",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 4,
+            "name": "Endless Mode",
+            "name_id": "endless_mode",
+            "description": "Solve questions until you're tired. Exit by entering 'X'."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What was the first ever London Underground line to be built?",
+                "options": [
+                    "Bakerloo Line",
+                    "Metropolitan Line",
+                    "Circle Line",
+                    "Victoria Line"
+                ],
+                "answer": "Metropolitan Line",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What machine element is located in the center of fidget spinners?",
+                "options": [
+                    "Gears",
+                    "Bearings",
+                    "Belts",
+                    "Axles"
+                ],
+                "answer": "Bearings",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which sign of the zodiac is represented by the Crab?",
+                "options": [
+                    "Virgo",
+                    "Libra",
+                    "Sagittarius",
+                    "Cancer"
+                ],
+                "answer": "Cancer",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the largest living species of penguin?",
+                "options": [
+                    "Adele",
+                    "King",
+                    "Emperor",
+                    "Gentoo"
+                ],
+                "answer": "Emperor",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What does the F stand for in the FBI?",
+                "options": [
+                    "First",
+                    "Formal",
+                    "Foreign",
+                    "Federal"
+                ],
+                "answer": "Federal",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 1,
+        "mode": {
+            "id": 1,
+            "name": "Practice",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the official language of Brazil?",
+                "options": [
+                    "Brazilian",
+                    "Spanish",
+                    "English",
+                    "Portuguese"
+                ],
+                "answer": "Portuguese",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 1
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 1,
+            "name": "Practice",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which of the following is not an Ivy League University?",
+                "options": [
+                    "Princeton",
+                    "University of Pennsylvania",
+                    "Harvard",
+                    "Stanford"
+                ],
+                "answer": "Stanford",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What style of beer will typically have a higher than average hop content?",
+                "options": [
+                    "Stout",
+                    "Extra Special Bitter",
+                    "Scotch Ale",
+                    "India Pale Ale"
+                ],
+                "answer": "India Pale Ale",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Waluigi's first appearance was in what game?",
+                "options": [
+                    "Mario Tennis 64 (N64)",
+                    "Mario Party (N64)",
+                    "Wario Land: Super Mario Land 3",
+                    "Super Smash Bros. Ultimate"
+                ],
+                "answer": "Mario Tennis 64 (N64)",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the largest living species of penguin?",
+                "options": [
+                    "Adele",
+                    "Gentoo",
+                    "Emperor",
+                    "King"
+                ],
+                "answer": "Emperor",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 2,
+            "name": "Timed",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What planet is not named after a Greek or Roman god?",
+                "options": [
+                    "Earth",
+                    "Jupiter",
+                    "Mercury",
+                    "Mars"
+                ],
+                "answer": "Earth",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In which fast food chain can you order a Jamocha Shake?",
+                "options": [
+                    "Wendy's",
+                    "McDonald's",
+                    "Burger King",
+                    "Arby's"
+                ],
+                "answer": "Arby's",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What is the largest organ of the human body?",
+                "options": [
+                    "Skin",
+                    "Liver",
+                    "Heart",
+                    "large Intestine"
+                ],
+                "answer": "Skin",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
     }
 ]
