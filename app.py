@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_files.quiz import run_quiz
-from streamlit_files.score import display_stats
+from streamlit_files.score import display_stats, show_results
 from streamlit_files.utils import configure_quiz
 
 st.set_page_config(page_title="QuizMe", page_icon="Q")
@@ -20,10 +20,12 @@ def choose_and_run_task():
         if st.button("Run Quiz"):
             st.session_state.ret = False
             st.session_state.current_page = "configure_quiz"
+            st.rerun()
 
     with col2:
         if st.button("View Stats"):
             st.session_state.current_page = "display_stats"
+            st.rerun()
             #display_stats()
 
 def main():
@@ -32,16 +34,18 @@ def main():
         st.write("Welcome, Welcome! What would you like to do today?")
         choose_and_run_task()
 
-    if st.session_state.current_page == "configure_quiz":
+    elif st.session_state.current_page == "configure_quiz":
         configure_quiz()
 
-    if st.session_state.current_page == "run_selected_quiz":
+    elif st.session_state.current_page == "run_selected_quiz":
         run_quiz()
 
-    if st.session_state.current_page == "display_stats":
+    elif st.session_state.current_page == "results":
+        show_results()
+        
+    elif st.session_state.current_page == "display_stats":
         display_stats()
 
 
 if __name__ == "__main__":
     main()
-

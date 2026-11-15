@@ -7560,6 +7560,20 @@
             "wrongly_answered": 2,
             "no_of_questions": 4,
             "percentage": 25.0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 1,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 33.33333333333333
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 2,
+            "percentage": 0
         }
     ],
     "Entertainment: Musicals & Theatres": [
@@ -7669,6 +7683,13 @@
             "wrongly_answered": 0,
             "no_of_questions": 0,
             "percentage": 0
+        },
+        {
+            "categ_name": "Entertainment: Music",
+            "correctly_answered": 1,
+            "wrongly_answered": 1,
+            "no_of_questions": 2,
+            "percentage": 50.0
         }
     ],
     "Science & Nature": [

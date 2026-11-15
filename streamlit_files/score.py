@@ -66,27 +66,27 @@ def record_score_data(set_of_questions, game_config):
     with open(SCORES_DATA_FILENAME, "w") as file:
         json.dump(scores_data, file, indent=4)
 
-
-
-def handle_and_print_score(set_of_questions, game_config, printScore=True):
-
+def handle_score(set_of_questions, game_config):
     correctly_answered, wrongly_answered, no_of_questions = len(set_of_questions["correctly_answered"]), len(set_of_questions["wrongly_answered"]), set_of_questions["no_of_questions"]
-    percentage_score = calculate_score(correctly_answered, no_of_questions)
-
-    #some modes are supposed to not print scores (e.g the game modes) bcuz they'll print differently in their own function.
-    #dunno if i'll later scrap this
-
-    if printScore:
-        st.write(f"""You scored {correctly_answered} out of {no_of_questions}.
-        Your percentage score is: {percentage_score}\n""")
 
     record_score_data(set_of_questions, game_config)
     categ_name = (game_config["category"])["name"]
     update_stats(categ_name, correctly_answered, wrongly_answered, no_of_questions)
 
-    st.session_state.question_state = None
-    st.session_state.questions = []
+def print_score(set_of_questions):
+    correctly_answered, no_of_questions = len(set_of_questions["correctly_answered"]), set_of_questions["no_of_questions"]
+    percentage_score = calculate_score(correctly_answered, no_of_questions)
 
+    st.write(f"""You scored {correctly_answered} out of {no_of_questions}.
+    Your percentage score is: {percentage_score}\n""")
+
+def show_results():
+    st.subheader("Results")
+    print_score(st.session_state.set_of_questions)
+
+    if st.button("Return Home"):
+        st.session_state.current_page = "home"
+        st.rerun()
 
 #---- DISPLAY STATS STUFF ----
 
@@ -148,105 +148,9 @@ def display_stats():
     elif user_input == "Categorical performance":
         display_categorical_stats()
 
-
-"""so, in handle scores, we shud pass a dictionary for
- what category of questions we answered for. and
-the questions we got right and wrong, in case we want 
-to do practice later on
-"""
-
 if __name__ == "__main__":
     #categs_avgs = [("Math", 90),  ("Computer", 299),  ("Computer", 380), ("Computer", 80),  ("Computer", 20)]
     #print(ret_all_categs(categs_avgs))
     sorted_categs_avgs = [('Computer', 380), ('Computer', 299), ('Math', 90), ('Computer', 80), ('Computer', 20)]
     st.write(display_categorical_stats(sorted_categs_avgs))
     st.write("Doneee")
-
-
-
-"""
-def compute_stats(scores_data):
-    categ_scores = {} #dict storing kvp of name of categ and lists of all scores in the categ
-    for record in scores_data:
-        categ_name = (record["category"])["name"]
-        score = compute_score(record) #record's score :(
-
-        if categ_name not in categ_scores:
-            categ_scores[categ_name] = []
-            categ_scores[categ_name].append(score)
-        else:
-            categ_scores[categ_name].append(score)
-
-    #shud probably store this, and fins a way to add only new ones, or just store immediately a quiz
-"""
-
-"""
-def load_scores():
-    
-    #Loads scores from scores.json
-    with open(SCORES_FILENAME, "r") as file:
-        scores_history = json.load(file)
-    return scores_history
-"""
-
-"""
-#no longer of useee
-def record_score(score, game_config):
-    scores = load_scores()
-
-    scores.append(score)
-
-    with open(SCORES_FILENAME, "w") as file:
-        json.dump(scores, file, indent=4)
-"""
-
-
-
-"""
-we want to be able to display:
-- performance per topic for the top 5 topics, and bottom 3 topics if applicable
-- number of questions failed, number of questions passed, 
-percentage performance, 
-
-Number of quizzes completed
-
-Average score 
-
-Number of quizzes completed 
-
-Best score 
-
-Worst score
-- 
-"""
-
-def display_categorical_performance(scores_data):
-    print("kmd,,")
-
-#have function that return s the percentage adn numbers
-#have function taht matches to the category, when needed
-#function that checks the first 5 and last 4
-
-#first compute categs scores
-
-"""
-{
-
-{"name": "NAEMME", "scores": [893, 32, 32]},
-{"name": "NAEMME", "scores": [893, 32, 32]}
-
-}
-
-
-def display_top_5():
-
-    Displays top 5 scores.
-
-    print("Your top 5 scores: \n")
-
-    scores = load_scores()
-    top_5 = sorted(scores, reverse=True)[:5]
-    for i, score in enumerate(top_5):
-        print(f"{i+1}. {score}\n")
-
-"""

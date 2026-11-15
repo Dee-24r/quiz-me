@@ -58780,5 +58780,138 @@
             }
         ],
         "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the shape of the toy invented by Hungarian professor Ern\u0151 Rubik?",
+                "options": [
+                    "Sphere",
+                    "Pyramid",
+                    "Cylinder",
+                    "Cube"
+                ],
+                "answer": "Cube",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "options": [
+                    "Richard Branson",
+                    "Alan Sugar",
+                    "Donald Trump",
+                    "Bill Gates"
+                ],
+                "answer": "Richard Branson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Which type of cutlery is most suited for eating soup?",
+                "options": [
+                    "Chopsticks",
+                    "Spoon",
+                    "Fork",
+                    "Knife"
+                ],
+                "answer": "Spoon",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 12,
+            "name": "Entertainment: Music"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 1,
+            "name": "Practice Mode",
+            "name_id": "practice_mode",
+            "description": "Choose a number of questions and test yourself on them."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "To become a \"one-hit wonder\" artist needs to release only one song per year.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "Entertainment: Music",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Michael Jackson wrote The Simpsons song \"Do the Bartman\".",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "Entertainment: Music",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 2
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+                "options": [
+                    "Transformers",
+                    "Rubik\u2019s Cube",
+                    "Care Bears",
+                    "Cabbage Patch Kids"
+                ],
+                "answer": "Cabbage Patch Kids",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "On a dartboard, what number is directly opposite No. 1?",
+                "options": [
+                    "20",
+                    "19",
+                    "15",
+                    "12"
+                ],
+                "answer": "19",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 2
     }
 ]

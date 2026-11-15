@@ -125,7 +125,12 @@ def configure_quiz():
         
         
     if st.button("Start Quiz"):
+        st.session_state.question_state = None
+        st.session_state.questions = []
         st.session_state.current_page = "run_selected_quiz"
+
+        st.session_state.start_time = None
+        st.session_state.time_limit = None
         st.rerun()
     
 
@@ -159,6 +164,7 @@ def format_time_figures(no_of_seconds):
     no_of_hours, no_of_minutes = divmod(no_of_minutes, 60)
     return int(no_of_hours), int(no_of_minutes), int(no_of_seconds)
 
+    
 
 #def print_formatted_time(no_of_hours, no_of_minutes, no_of_seconds):
 #   st.text(f"{no_of_hours:02d} : {no_of_minutes:02d} : {no_of_seconds:02d}")
@@ -167,4 +173,3 @@ def format_time_figures(no_of_seconds):
 
 if __name__ == "__main__":
     save_opentdb_categories()
-  

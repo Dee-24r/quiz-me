@@ -3,7 +3,7 @@ import time
 import streamlit as st
 
 from streamlit_files.questions import get_random_questions, get_opentdb_questions, get_quizapi_questions
-from streamlit_files.score import handle_and_print_score
+from streamlit_files.score import handle_score
 from streamlit_files.utils import configure_quiz, choose_game_mode, format_time_figures
 
 #statrt from length of questions after reload
@@ -21,6 +21,11 @@ def display_question(question):
         key=f"{st.session_state.current_question}"
     )
 
+
+def finish_quiz():
+    handle_score(st.session_state.set_of_questions, st.session_state.state_game_config)
+    st.session_state.current_page = "results"
+    st.rerun()
 
 def select_option(question, allow_quit=False):
     if st.session_state.state_game_config == None:
@@ -59,13 +64,10 @@ def select_option(question, allow_quit=False):
                 st.session_state.question_state = "answering"
                 st.session_state.answer = None
                 st.rerun()
-
+            
             if st.button("Quit", key=f"quit_{st.session_state.current_question}"):
-                st.session_state.quit = True
-                st.session_state.question_state = "answering"
-                st.session_state.answer = None
-                handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
-                st.rerun()
+                finish_quiz()
+            
 
 
         elif st.session_state.current_question < len(st.session_state.questions) - 1:
@@ -74,20 +76,10 @@ def select_option(question, allow_quit=False):
                 st.session_state.question_state = "answering"
                 st.session_state.answer = None
                 st.rerun()
-
         else:
             if st.button("Finish Quiz"):
-                st.session_state.current_question += 1
-                st.session_state.question_state = "answering"
-                st.session_state.answer = None
-                handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
-                time.sleep(1)
-
-                if st.button("Return to Home"):
-                    #st.session_state.ret == True
-                    st.session_state.current_page = "home"
-                    st.rerun()
-                return
+                finish_quiz()
+        
 
 
 def run_practice_mode(game_config):
@@ -135,9 +127,13 @@ def run_timer(time_limit):
     st.session_state.hrs, st.session_state.mins, st.session_state.secs = format_time_figures(st.session_state.remaining_time)
     timer_display.text(f"Time remaining: {st.session_state.hrs:02d} : {st.session_state.mins:02d} : {st.session_state.secs:02d}")
 
-    if st.session_state.remaining_time <= 0:
+    """if st.session_state.remaining_time <= 0:
         st.session_state.time_up = True
         handle_and_print_score(st.session_state.set_of_questions, st.session_state.state_game_config)
+        return"""
+
+    if st.session_state.remaining_time <= 0:
+        finish_quiz()
         return
     
     return st.session_state.time_up
@@ -172,11 +168,11 @@ def run_timed_mode(game_config):
         no_of_answered_questions = len(st.session_state.set_of_questions["wrongly_answered"]) + len(st.session_state.set_of_questions["correctly_answered"])
         st.write(f"Questions answered: {no_of_answered_questions}")
 
+        
         st.session_state.ret = True
         st.session_state.time_limit = None
         st.session_state.start_time = None
         return
-
 
 def jeopardy_board():
     points = [100, 200, 300, 400, 500]
@@ -327,7 +323,7 @@ def run_streak_mode(game_config):
 
 def run_millionaire_mode(game_config):
     print("Not yet implemented!")
-    
+        
 
 
 def run_quiz():
@@ -356,17 +352,6 @@ def run_quiz():
     #st.session_state.set_of_questions = None
 
 
-
-
-
-
 if __name__ == "__main__":
     print("How smart are you? :D\n")
     run_timed_mode()
-
-
-
-"""
-#st.session_state.questions = get_random_questions()
-    #st.session_state.questions = get_quizapi_questions()
-    # """

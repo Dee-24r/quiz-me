@@ -153,18 +153,3 @@ def get_quizapi_questions():
 if __name__ == "__main__":
     get_quizapi_questions()
     print("Done")
-
-
-"""
-if __name__ == "__main__":
-    print("Loading questions...\n")
-
-    questions = load_questions()
-    print (f"Loaded {len(questions)} questions. \n")
-
-    print("Random Questions:")
-    random_questions = get_random_questions()
-
-    for i, question in enumerate(random_questions):
-        print(f"{i+1}. {question['question_statement']}")
-"""
