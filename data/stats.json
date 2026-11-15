@@ -7574,6 +7574,27 @@
             "wrongly_answered": 2,
             "no_of_questions": 2,
             "percentage": 0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 5,
+            "wrongly_answered": 10,
+            "no_of_questions": 15,
+            "percentage": 33.33333333333333
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 6,
+            "wrongly_answered": 9,
+            "no_of_questions": 15,
+            "percentage": 40.0
+        },
+        {
+            "categ_name": "General Knowledge",
+            "correctly_answered": 1,
+            "wrongly_answered": 4,
+            "no_of_questions": 15,
+            "percentage": 6.666666666666667
         }
     ],
     "Entertainment: Musicals & Theatres": [
@@ -7690,6 +7711,13 @@
             "wrongly_answered": 1,
             "no_of_questions": 2,
             "percentage": 50.0
+        },
+        {
+            "categ_name": "Entertainment: Music",
+            "correctly_answered": 0,
+            "wrongly_answered": 2,
+            "no_of_questions": 3,
+            "percentage": 0
         }
     ],
     "Science & Nature": [
@@ -7699,6 +7727,15 @@
             "wrongly_answered": 1,
             "no_of_questions": 3,
             "percentage": 66.66666666666666
+        }
+    ],
+    "Entertainment: Video Games": [
+        {
+            "categ_name": "Entertainment: Video Games",
+            "correctly_answered": 1,
+            "wrongly_answered": 3,
+            "no_of_questions": 4,
+            "percentage": 25.0
         }
     ]
 }

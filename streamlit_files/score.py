@@ -80,6 +80,7 @@ def print_score(set_of_questions):
     st.write(f"""You scored {correctly_answered} out of {no_of_questions}.
     Your percentage score is: {percentage_score}\n""")
 
+
 def show_results():
     st.subheader("Results")
     print_score(st.session_state.set_of_questions)

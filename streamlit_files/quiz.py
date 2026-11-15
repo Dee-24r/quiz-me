@@ -75,6 +75,9 @@ def select_option(question, allow_quit=False):
                 st.session_state.current_question += 1
                 st.session_state.question_state = "answering"
                 st.session_state.answer = None
+
+                if st.session_state.state_game_config["mode"]["name_id"] == "jeopardy_mode":
+                    st.session_state.added_points = None
                 st.rerun()
         else:
             if st.button("Finish Quiz"):
@@ -178,50 +181,54 @@ def jeopardy_board():
     points = [100, 200, 300, 400, 500]
 
     for row, no_of_points in enumerate(points):
-        cols = st.columns(4)
+        cols = st.columns(3)
 
-        for col in cols:
-            with col:
-                if st.button(str(no_of_points), key=f"ques_{row}_{col}"):
+        for col, pos in enumerate(cols):
+            key = f"ques_{row}_{col}"
+            with pos:
+                if st.button(str(no_of_points), key=key, disabled=key in st.session_state.used_tiles):
+                    st.session_state.used_tiles.add(key)
                     st.session_state.added_points = no_of_points
                     st.rerun()
 
 
 def run_jeopardy_mode(game_config):
     if "questions" not in st.session_state or len(st.session_state.questions) == 0:
-        st.session_state.state_game_config = game_config
-        st.session_state.questions = []
-
-        for diffic_level in st.session_state.difficulty_levels:
-            st.session_state.state_game_config["difficulty"] = diffic_level
-            questions_by_diff = get_opentdb_questions(st.session_state.state_game_config)
-            for question in questions_by_diff:
-                st.session_state.questions.append(question)
-            time.sleep(1)
+        st.session_state.questions = get_opentdb_questions(game_config)
 
         st.session_state.current_question = 0
         st.session_state.score = 0
         st.session_state.answer = None
         st.session_state.question_state = "answering"
 
+        st.session_state.used_tiles = set()
+        st.session_state.added_points = None
+
         st.session_state.set_of_questions = {
             "no_of_questions": len(st.session_state.questions),
             "wrongly_answered": [],
             "correctly_answered": []
         }
-        st.rerun()
 
-    st.write("Welcome to Jeopardy. You answer 15 questions in total. "\
-        "You pick the amount of points that get added or removed from your score for a question that's chosing at random. " \
-        "Get it right, and it's those number of points are added. Get it wrong, and they are subtracted. More or less, blindly " \
-        "gambling on questions. You get 3 of each point questions (100, 200,.. etc).")
+    if st.session_state.added_points == None:
+        st.write("Welcome to Gambling Jeopardy!"\
+                "You pick the amount of points for the next question but questions are random! " \
+                "Get it right and the points are added. Get it wrong, and they are subtracted. " \
+                "You get 3 of each point questions (100, 200,.. etc).")
+        
+        st.write(f"Score: {st.session_state.score}")
+        jeopardy_board()
+        return
+
 
     if st.session_state.current_question < len(st.session_state.questions):
-        jeopardy_board()
+        st.write(f"This question is worth {st.session_state.added_points} points")
         question = st.session_state.questions[st.session_state.current_question]
         select_option(question)
+        st.write(f"Score: {st.session_state.score}")
 
-    st.write(f"Score: {st.session_state.score}")
+
+    
 
 
 

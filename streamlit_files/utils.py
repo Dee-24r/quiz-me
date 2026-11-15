@@ -107,11 +107,12 @@ def configure_quiz():
 
     if st.session_state.ret == True:
         return
+
+    st.session_state.state_game_config = {}
     
     mode = st.session_state.state_game_config["mode"] = choose_game_mode()
-    
-
     st.session_state.state_game_config["category"] = choose_category()
+
     if mode["name_id"] != "jeopardy_mode":
         st.session_state.state_game_config["type"] = choose_questions_type()
         st.session_state.state_game_config["difficulty"] = choose_difficulty()
@@ -121,7 +122,10 @@ def configure_quiz():
     if mode["name_id"] == "endless_mode":
         st.session_state.state_game_config["amount"] = 15
     elif mode["name_id"] == "jeopardy_mode":
-        st.session_state.state_game_config["amount"] = 4
+        st.session_state.state_game_config["amount"] = 15
+
+        
+
         
         
     if st.button("Start Quiz"):
@@ -142,15 +146,17 @@ def build_param_list(game_config):
     configure_quiz
     """
 
-    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config["type"], game_config["difficulty"], game_config["amount"]
+    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config.get("type"), game_config.get("difficulty"), game_config["amount"]
 
     params = {}
 
-    params["difficulty"] = c_difficulty["name_id"]
     params["category"] = c_category["id"]
     params["amount"] = c_amount
 
-    if c_type["name_id"]!= "mixed":
+    if c_difficulty != None:        
+        params["difficulty"] = c_difficulty["name_id"]
+
+    if c_type != None and c_type["name_id"]!= "mixed":
             params["type"] = c_type["name_id"]
 
     return params

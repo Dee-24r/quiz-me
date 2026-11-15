@@ -58913,5 +58913,564 @@
         ],
         "correctly_answered": [],
         "no_of_questions": 2
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "The Original Jack-o-Lanterns were actually hollowed out turnips.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What is the unit of currency in Laos?",
+                "options": [
+                    "Konra",
+                    "Ruble",
+                    "Kip",
+                    "Dollar"
+                ],
+                "answer": "Kip",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "When was Hubba Bubba first introduced?",
+                "options": [
+                    "1972",
+                    "1979",
+                    "1984",
+                    "1980"
+                ],
+                "answer": "1979",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What type of animal was Harambe, who was shot after a child fell into it's enclosure at the Cincinnati Zoo?",
+                "options": [
+                    "Crocodile",
+                    "Panda",
+                    "Gorilla",
+                    "Tiger"
+                ],
+                "answer": "Gorilla",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Dihydrogen Monoxide was banned due to health risks after being discovered in 1983 inside swimming pools and drinking water.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Mexican Beer \"Corona\" is what type of beer?",
+                "options": [
+                    "Baltic Porter",
+                    "Pilfsner",
+                    "Pale Lager",
+                    "India Pale Ale"
+                ],
+                "answer": "Pale Lager",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Before the 19th Century, the \"Living Room\" was originally called the...",
+                "options": [
+                    "Sitting Room",
+                    "Open Room",
+                    "Loft",
+                    "Parlor"
+                ],
+                "answer": "Parlor",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            },
+            {
+                "question_statement": "An eggplant is a vegetable.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "In Scandinavian languages, the letter \u00c5 means river.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "True",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            },
+            {
+                "question_statement": "What is real haggis made of?",
+                "options": [
+                    "Sheep's Heart, Kidneys and Lungs",
+                    "Whole Sheep",
+                    "Sheep's Heart, Liver and Lungs",
+                    "Sheep's Liver, Kidneys and Eyes"
+                ],
+                "answer": "Sheep's Heart, Liver and Lungs",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "\"Number 16 Bus Shelter\" was a child's name that was approved by the New Zealand government.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            },
+            {
+                "question_statement": "Scotland voted to become an independent country during the referendum from September 2014.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The CEO of tech company Apple following Steve Jobs is named Tim Apple.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many cards are there in a standard deck of playing cards?",
+                "options": [
+                    "40",
+                    "52",
+                    "32",
+                    "64"
+                ],
+                "answer": "52",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Water is naturally coloured blue.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Bob and Mike Bryan were well known brothers in which sport?",
+                "options": [
+                    "Tennis",
+                    "Football",
+                    "Basketball",
+                    "Baseball"
+                ],
+                "answer": "Tennis",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which company did Valve cooperate with in the creation of the Vive?",
+                "options": [
+                    "HTC",
+                    "Razer",
+                    "Oculus",
+                    "Google"
+                ],
+                "answer": "HTC",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What was Bank of America originally established as?",
+                "options": [
+                    "Bank of Italy",
+                    "Bank of Long Island",
+                    "Bank of Pennsylvania",
+                    "Bank of Charlotte"
+                ],
+                "answer": "Bank of Italy",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            },
+            {
+                "question_statement": "In blood typing, the (+) and (-) marker after an A, B, AB, or O is called Rh factor. Which of the following is the source of its discovery?",
+                "options": [
+                    "Rhizomes",
+                    "Rhesus Monkeys",
+                    "Red-Haired People",
+                    "Rheumatism Patients"
+                ],
+                "answer": "Rhesus Monkeys",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is cowardly, they are said to have what color belly?",
+                "options": [
+                    "Yellow",
+                    "Green",
+                    "Blue",
+                    "Red"
+                ],
+                "answer": "Yellow",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Great Wall of China is visible from the moon.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "If you are caught \"Goldbricking\", what are you doing wrong?",
+                "options": [
+                    "Stealing",
+                    "Smoking",
+                    "Cheating",
+                    "Slacking"
+                ],
+                "answer": "Slacking",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Which river flows through the Scottish city of Glasgow?",
+                "options": [
+                    "Tweed",
+                    "Tay",
+                    "Dee",
+                    "Clyde"
+                ],
+                "answer": "Clyde",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "The drug cartel run by Pablo Escobar originated in which South American city?",
+                "options": [
+                    "Medell\u00edn",
+                    "Bogot\u00e1",
+                    "Quito",
+                    "Cali"
+                ],
+                "answer": "Medell\u00edn",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "The disease cancer in itself is not contagious.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Sitting for more than three hours a day can cut two years off a person's life expectancy.",
+                "options": [
+                    "True",
+                    "False"
+                ],
+                "answer": "True",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Where is the train station \"Llanfair\u00adpwllgwyngyll\u00adgogery\u00adchwyrn\u00addrobwll\u00adllan\u00adtysilio\u00adgogo\u00adgoch\"?",
+                "options": [
+                    "Wales",
+                    "Denmark",
+                    "Czech Republic",
+                    "Moldova"
+                ],
+                "answer": "Wales",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What direction does the Statue of Liberty face?",
+                "options": [
+                    "Southeast",
+                    "Southwest",
+                    "Northeast",
+                    "Northwest"
+                ],
+                "answer": "Southeast",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "The phrase \"accident waiting to happen\" is an example of what type of figure of speech?",
+                "options": [
+                    "Simile",
+                    "Metaphor",
+                    "Analogy",
+                    "Idiom"
+                ],
+                "answer": "Idiom",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "The early part of which decade, did the Goth Subculture begin?",
+                "options": [
+                    "1970s",
+                    "1980s",
+                    "2000s",
+                    "1990s"
+                ],
+                "answer": "1980s",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 12,
+            "name": "Entertainment: Music"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "According to a song by Belinda Carlisle, Heaven is a place on what?",
+                "options": [
+                    "Uranus",
+                    "Venus",
+                    "Earth",
+                    "Mars"
+                ],
+                "answer": "Earth",
+                "category": "Entertainment: Music",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "Who wrote the Sinead O`Connor hit 'Nothing Compares 2 U'?",
+                "options": [
+                    "Cameo",
+                    "Michael Jackson",
+                    "Rick James",
+                    "Prince"
+                ],
+                "answer": "Prince",
+                "category": "Entertainment: Music",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 15,
+            "name": "Entertainment: Video Games"
+        },
+        "amount": 4,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "Who is the creator of the Super Smash Bros. Series?",
+                "options": [
+                    "Reggie Fils-Aim\u00e9",
+                    "Masahiro Sakurai",
+                    "Hideo Kojima",
+                    "Bill Trinen"
+                ],
+                "answer": "Masahiro Sakurai",
+                "category": "Entertainment: Video Games",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What year did the game \"Overwatch\" enter closed beta?",
+                "options": [
+                    "2011",
+                    "2013",
+                    "2016",
+                    "2015"
+                ],
+                "answer": "2015",
+                "category": "Entertainment: Video Games",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "In what city in the dystopia alternate future of Half-Life 2 do you first start in?",
+                "options": [
+                    "City 6",
+                    "City 45",
+                    "City 18",
+                    "City 17"
+                ],
+                "answer": "City 17",
+                "category": "Entertainment: Video Games",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "When was Minecraft first released to the public?",
+                "options": [
+                    "September 17th, 2009",
+                    "May 17th, 2009",
+                    "November 18th, 2011",
+                    "October 7th, 2011"
+                ],
+                "answer": "May 17th, 2009",
+                "category": "Entertainment: Video Games",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 4
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 4,
+            "name": "Endless Mode",
+            "name_id": "endless_mode",
+            "description": "Solve questions until you're tired. Exit by entering 'X'."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What is the defining characteristic of someone who is described as hirsute?",
+                "options": [
+                    "Tall",
+                    "Hairy",
+                    "Rude",
+                    "Funny"
+                ],
+                "answer": "Hairy",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "In what year did Halley's Comet, which will not appear again until the year 2061, previously approach Earth?",
+                "options": [
+                    "2001",
+                    "1942",
+                    "1909",
+                    "1986"
+                ],
+                "answer": "1986",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What direction does the Statue of Liberty face?",
+                "options": [
+                    "Northwest",
+                    "Northeast",
+                    "Southeast",
+                    "Southwest"
+                ],
+                "answer": "Southeast",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which of these Nicktoons were NOT originally a short on Oh Yeah! Cartoons before becoming their own series?",
+                "options": [
+                    "The Fairly OddParents",
+                    "My Life as a Teenage Robot",
+                    "ChalkZone",
+                    "Danny Phantom"
+                ],
+                "answer": "Danny Phantom",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "Bob and Mike Bryan were well known brothers in which sport?",
+                "options": [
+                    "Tennis",
+                    "Baseball",
+                    "Basketball",
+                    "Football"
+                ],
+                "answer": "Tennis",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            }
+        ],
+        "no_of_questions": 15
     }
 ]
