@@ -117,10 +117,10 @@ def configure_quiz():
         st.session_state.state_game_config["type"] = choose_questions_type()
         st.session_state.state_game_config["difficulty"] = choose_difficulty()
         
-        if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
-            st.session_state.state_game_config["amount"] = 15
-        else:
-            st.session_state.state_game_config["amount"] = choose_amount()
+    if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
+        st.session_state.state_game_config["amount"] = 15
+    else:
+        st.session_state.state_game_config["amount"] = choose_amount()
 
         
 
