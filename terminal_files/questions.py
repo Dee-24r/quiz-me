@@ -43,7 +43,7 @@ def get_random_questions(no_of_questions=3):
 
 def get_opentdb_questions(game_config):
     """Questions from Open Trivia DB"""
-    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config["type"], game_config["difficulty"], game_config["amount"]
+    #c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config["type"], game_config["difficulty"], game_config["amount"]
 
     params = build_param_list(game_config)
 

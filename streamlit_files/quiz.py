@@ -66,6 +66,7 @@ def select_option(question, allow_quit=False):
                 st.rerun()
             
             if st.button("Quit", key=f"quit_{st.session_state.current_question}"):
+                st.session_state.set_of_questions["no_of_questions"] = len(st.session_state.set_of_questions["correctly_answered"]) + len(st.session_state.set_of_questions["wrongly_answered"])
                 finish_quiz()
             
 
@@ -162,8 +163,9 @@ def run_timed_mode(game_config):
 
     allowed_time = len(st.session_state.questions)*5
     run_timer(allowed_time)
-
-    if st.session_state.current_question < len(st.session_state.questions) or not st.session_state.time_up:
+    
+    #or not st.session_state.time_up
+    if ( st.session_state.current_question < len(st.session_state.questions)):
         question = st.session_state.questions[st.session_state.current_question]
         select_option(question)
 

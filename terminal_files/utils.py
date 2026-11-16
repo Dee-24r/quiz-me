@@ -138,11 +138,14 @@ def configure_quiz(mode):
 
     global game_config
 
+
     game_config["mode"] = mode
     game_config["category"] = choose_category()
-    game_config["type"] = choose_questions_type()
-    game_config["difficulty"] = choose_difficulty()
 
+    if mode["name_id"] != "jeopardy_mode":    
+        game_config["type"] = choose_questions_type()
+        game_config["difficulty"] = choose_difficulty()
+    
     if mode["name_id"] in ("endless_mode", "jeopardy_mode"):
         game_config["amount"] = 15
     else:
@@ -159,15 +162,18 @@ def build_param_list(game_config):
     configure_quiz
     """
 
-    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config["type"], game_config["difficulty"], game_config["amount"]
+    c_category, c_type, c_difficulty, c_amount = game_config["category"], game_config.get("type"), game_config.get("difficulty"), game_config["amount"]
 
     params = {}
 
-    params["difficulty"] = c_difficulty["name_id"]
     params["category"] = c_category["id"]
     params["amount"] = c_amount
 
-    if c_type["name_id"]!= "mixed":
+    if c_difficulty != None:
+        params["difficulty"] = c_difficulty["name_id"]
+    
+
+    if c_type != None and c_type["name_id"]!= "mixed":
             params["type"] = c_type["name_id"]
 
     return params

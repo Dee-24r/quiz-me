@@ -110,6 +110,7 @@ def ret_high_and_low_categs():
 
 
 def display_categorical_stats():
+    print(f"Here are your percentage scores for each category!")
     sorted_categs_avgs = ret_high_and_low_categs()
     for item in sorted_categs_avgs:
         print(f"{item[0]} \t {item[1]}")

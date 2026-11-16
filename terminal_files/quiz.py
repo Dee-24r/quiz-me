@@ -145,49 +145,46 @@ def run_jeopardy_mode(game_config):
     set_of_questions["wrongly_answered"] = []
     set_of_questions["correctly_answered"] = []
 
-    print("\nWelcome to Jeopardy. You answer 15 questions in total. "\
-    "You pick the amount of points that get added or removed from your score for a question that's chosen at random. " \
-    "Get it right, and it's those number of points are added. Get it wrong, and they are subtracted. More or less, blindly " \
+    print("\nWelcome to Jeopardy! "\
+    "You pick the amount of points a question's worth but the question is chosen at random! " \
+    "Get it right, and it's points are added. Get it wrong, and they are subtracted. More or less, blindly " \
     "gambling on questions. You get 3 of each point questions (100, 200,.. etc).\n")
 
-    points = {
-        100: 0, 200: 0, 300: 0, 400: 0, 500: 0,
-    }
+    points = {100: 3, 200: 3, 300: 3, 400: 3, 500: 3}
     point_choices = list(points.keys())
 
     for question in list_of_questions:
         while True:
-            score_addition = input(f"Pick a your question's worth from {point_choices}: ")
-            if not score_addition.isdigit() or (score_addition not in list(points.keys())):
+            score_addition = input(f"Pick your question's worth from {points}: ").strip()
+            if not score_addition.isdigit():
                 print("Enter a valid option")
                 continue
-            else:
-                score_addition = int(score_addition)
 
-            if score_addition not in point_choices or points[score_addition] >= 3:
+            score_addition = int(score_addition)
+            if score_addition not in point_choices:
                 print("You've exceeded the number of uses for that question worth. " \
                 "Select a different worth for your question")
                 continue
             
             break
         
-        points[score_addition] += 1
+        points[score_addition] -= 1
 
-        if points[score_addition] >= 3:
+        if points[score_addition] <= 0:
             point_choices.remove(score_addition)
 
         display_question(question)
         result = select_option(question)
 
         if not result:
-            score - score_addition
+            score -= score_addition
             (set_of_questions["wrongly_answered"]).append(question)
         elif result:
-            score + score_addition
+            score += score_addition
             (set_of_questions["correctly_answered"]).append(question)
 
         print(f"score: {score}")
-        print(f" Points | Usage")
+        
 
 
     handle_and_print_score(set_of_questions, game_config)

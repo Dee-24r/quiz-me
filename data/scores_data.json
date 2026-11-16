@@ -59472,5 +59472,287 @@
             }
         ],
         "no_of_questions": 15
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 3,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What do sailors call the back of a boat?",
+                "options": [
+                    "Port",
+                    "Starboard",
+                    "Bow",
+                    "Stern"
+                ],
+                "answer": "Stern",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "How many letters are in the English alphabet?",
+                "options": [
+                    "30",
+                    "17",
+                    "26",
+                    "5"
+                ],
+                "answer": "26",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What kind of aircraft was developed by Igor Sikorsky in the United States in 1942?",
+                "options": [
+                    "Jet",
+                    "Helicopter",
+                    "Space Capsule",
+                    "Stealth Blimp"
+                ],
+                "answer": "Helicopter",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "no_of_questions": 3
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 2,
+        "mode": {
+            "id": 2,
+            "name": "Timed Mode",
+            "name_id": "timed_mode",
+            "description": "Be timed to answer questions. Allowed time will be based on the number and complexity of the questions."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 2
+    },
+    {
+        "category": {
+            "id": 19,
+            "name": "Science: Mathematics"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [],
+        "correctly_answered": [],
+        "no_of_questions": 0
+    },
+    {
+        "category": {
+            "id": 9,
+            "name": "General Knowledge"
+        },
+        "amount": 15,
+        "mode": {
+            "id": 3,
+            "name": "Jeopardy",
+            "name_id": "jeopardy_mode",
+            "description": "Game style! Get points by answering questions correctly, and lose points by answering questions wrongly."
+        },
+        "wrongly_answered": [
+            {
+                "question_statement": "What was the original name of the search engine \"Google\"?",
+                "options": [
+                    "Netscape Navigator",
+                    "CatMassage",
+                    "SearchPro",
+                    "BackRub"
+                ],
+                "answer": "BackRub",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Linus Pauling, one of the only winners of multiple Nobel Prizes, earned his Nobel Prizes in Chemistry and what?",
+                "options": [
+                    "Physiology/Medicine",
+                    "Peace",
+                    "Economics",
+                    "Physics"
+                ],
+                "answer": "Peace",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What is the shortest month of the year?",
+                "options": [
+                    "February",
+                    "September",
+                    "December",
+                    "April"
+                ],
+                "answer": "February",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the perimeter of a circle more commonly known as?",
+                "options": [
+                    "Radius",
+                    "Arc",
+                    "Circumference",
+                    "Diameter"
+                ],
+                "answer": "Circumference",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When someone is cowardly, they are said to have what color belly?",
+                "options": [
+                    "Yellow",
+                    "Green",
+                    "Red",
+                    "Blue"
+                ],
+                "answer": "Yellow",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the Italian word for \"tomato\"?",
+                "options": [
+                    "Pomodoro",
+                    "Aglio",
+                    "Peperoncino",
+                    "Cipolla"
+                ],
+                "answer": "Pomodoro",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "Which language is most widely spoken in Switzerland?",
+                "options": [
+                    "Swiss",
+                    "Italian",
+                    "German",
+                    "French"
+                ],
+                "answer": "German",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the last letter of the Greek alphabet?",
+                "options": [
+                    "Omega",
+                    "Kappa",
+                    "Epsilon",
+                    "Mu"
+                ],
+                "answer": "Omega",
+                "category": "General Knowledge",
+                "difficulty": "medium"
+            },
+            {
+                "question_statement": "What year was Queen Elizabeth II born?",
+                "options": [
+                    "1923",
+                    "1929",
+                    "1926",
+                    "1930"
+                ],
+                "answer": "1926",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            },
+            {
+                "question_statement": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "options": [
+                    "Alan Sugar",
+                    "Richard Branson",
+                    "Bill Gates",
+                    "Donald Trump"
+                ],
+                "answer": "Richard Branson",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            }
+        ],
+        "correctly_answered": [
+            {
+                "question_statement": "What country does sushi & karaoke come from?",
+                "options": [
+                    "South Korea",
+                    "Vietnam",
+                    "China",
+                    "Japan"
+                ],
+                "answer": "Japan",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "When was the website reddit founded ?",
+                "options": [
+                    "2008",
+                    "2004",
+                    "2005",
+                    "2006"
+                ],
+                "answer": "2005",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "The Sun rises from the North.",
+                "options": [
+                    "False",
+                    "True"
+                ],
+                "answer": "False",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "What is the closest planet to our solar system's sun?",
+                "options": [
+                    "Mars",
+                    "Earth",
+                    "Mercury",
+                    "Jupiter"
+                ],
+                "answer": "Mercury",
+                "category": "General Knowledge",
+                "difficulty": "easy"
+            },
+            {
+                "question_statement": "If someone said \"you are olid\", what would they mean?",
+                "options": [
+                    "You smell extremely unpleasant.",
+                    "You are out of shape/weak.",
+                    "You are incomprehensible/an idiot.",
+                    "Your appearance is repulsive."
+                ],
+                "answer": "You smell extremely unpleasant.",
+                "category": "General Knowledge",
+                "difficulty": "hard"
+            }
+        ],
+        "no_of_questions": 15
     }
 ]
